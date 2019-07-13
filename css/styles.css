@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato";
+  text-align: center;
+  color: #faed26;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  height: auto;
+}
+
+hr {
+  line-height: 200%;
+}
+
+.awake {
+  position: absolute;
+  bottom: 0;
+  right: 8em;
+}
+/*============
+     BUTTONS 
+============*/
+
+.button {
+  display: inline-block;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.5em 1.75em;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-accent {
+  color: #faed26;
+  border-color: #faed26;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #faed26;
+  color: #5a5560;
+}
+
+@media (max-width: 60rem) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+/*==============
+     TYPOGRAPHY 
+===============*/
+
+.title {
+  font-size: 7rem;
+  margin-bottom: 0.5em;
+  margin-top: 0em;
+  font-weight: 900;
+}
+
+.spanStyle {
+  font-size: 2rem;
+  font-weight: 300;
+  display: block;
+  font-style: italic;
+}
+
+.title-cta {
+  margin: 0 0 0.5em;
+}
+
+nav {
+  font-family: "Ubuntu";
+}
+
+.about {
+  font-size: 7rem;
+  margin-bottom: 0.5em;
+  margin-top: 0em;
+  font-weight: 900;
+}
+
+.about-cta {
+  margin: 0 0 0.5em;
+}
+
+.feed {
+  font-size: 7rem;
+  margin-bottom: 0.5em;
+  margin-top: 0em;
+  font-weight: 900;
+}
+/*============
+     HEADER 
+============*/
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1em;
+  padding-bottom: 20px;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
+  list-style-type: none;
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.2em;
+  color: #eee;
+}
+
+nav a:hover,
+nav a:focus {
+  font-weight: 1200;
+  color: white;
+}
+
+/*==============
+     Home Hero 
+===============*/
+.home-hero {
+  background-image: linear-gradient(-90deg, #5a5560, #46344e);
+  padding: 10em 0;
+}
+
+@media (min-width: 60rem) {
+  .home-hero {
+    height: 100vh;
+    padding-top: 40vh;
+  }
+}
+
+/*============
+     ABOUT 
+============*/
+.about-hero {
+  height: 100vh;
+  background-color: #000;
+}
+.about .spanStyle {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+p .spanStyle {
+  align-items: right;
+}
+
+@media (min-width: 60rem) {
+  .about-hero {
+    height: 100vh;
+    padding-top: 40vh;
+  }
+}
+
+/*============
+     feeds 
+============*/
+.feed-hero {
+  height: 100vh;
+
+  background-color: #5a5560;
+}
+.feed {
+}
+
+@media (min-width: 60rem) {
+  .feed-hero {
+    height: 100vh;
+    padding-top: 40vh;
+  }
+}
