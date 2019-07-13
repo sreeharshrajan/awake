@@ -156,6 +156,7 @@ nav a:focus {
      Home Hero 
 ===============*/
 .home-hero {
+  height: 100vh;
   background-image: linear-gradient(-90deg, #5a5560, #46344e);
   padding: 10em 0;
 }
