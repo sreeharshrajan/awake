@@ -12,8 +12,8 @@ body {
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .container {
@@ -21,14 +21,13 @@ img {
   height: auto;
 }
 
-hr {
-  line-height: 200%;
-}
-
 .awake {
   position: absolute;
   bottom: 0;
-  right: 8em;
+  right: 8%;
+  height: auto;
+  max-width: 100%;
+  display: none;
 }
 /*============
      BUTTONS 
@@ -67,14 +66,14 @@ hr {
 ===============*/
 
 .title {
-  font-size: 7rem;
+  font-size: 5.5rem;
   margin-bottom: 0.5em;
   margin-top: 0em;
   font-weight: 900;
 }
 
 .spanStyle {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 300;
   display: block;
   font-style: italic;
@@ -89,7 +88,7 @@ nav {
 }
 
 .about {
-  font-size: 7rem;
+  font-size: 5.5rem;
   margin-bottom: 0.5em;
   margin-top: 0em;
   font-weight: 900;
@@ -100,7 +99,7 @@ nav {
 }
 
 .feed {
-  font-size: 7rem;
+  font-size: 5.5rem;
   margin-bottom: 0.5em;
   margin-top: 0em;
   font-weight: 900;
@@ -114,10 +113,9 @@ header {
   left: 0;
   right: 0;
   margin-top: 1em;
-  padding-bottom: 20px;
 }
 
-nav {
+nav ul {
   padding: 0;
   margin: 0;
   margin-right: 30px;
@@ -127,21 +125,28 @@ nav {
 
 nav li {
   display: inline-block;
-  margin: 2em;
+  margin: 1em;
 }
 
 nav a {
-  text-decoration: none;
-  text-transform: uppercase;
   font-weight: 900;
-  font-size: 1.2em;
-  color: #eee;
+  text-decoration: none;
+  padding: 0.5em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8rem;
 }
 
 nav a:hover,
 nav a:focus {
   font-weight: 1200;
   color: white;
+}
+
+@media (min-width: 60rem) {
+  nav {
+    float: right;
+  }
 }
 
 /*==============
@@ -199,4 +204,12 @@ p .spanStyle {
     height: 100vh;
     padding-top: 40vh;
   }
+}
+
+/* CTA
+=================== */
+
+.cta {
+  background-color: #00ff6c;
+  padding: 5em 0;
 }
