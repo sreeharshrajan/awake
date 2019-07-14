@@ -32,6 +32,12 @@ img {
     filter: drop-shadow(0 -1em 13px rgb(100, 100, 100));
 }
 
+@media (max-width: 60rem) {
+    .awake {
+        margin-right: 1.7em;
+    }
+}
+
 
 /*===============
      BUTTONS 
@@ -132,7 +138,7 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    margin: 1em;
+    margin: 2em;
 }
 
 nav ul {
@@ -153,6 +159,8 @@ nav a {
     text-transform: uppercase;
     color: white;
     font-size: 0.8rem;
+    margin-right: 1em;
+    margin-top: 1em;
 }
 
 nav a:hover,
@@ -179,6 +187,8 @@ nav a:focus {
     background-size: cover;
     padding: 10em 0;
     opacity: 10%;
+    outline: 2px solid #faed26;
+    outline-offset: -2.5em;
 }
 
 .home-hero .container {
