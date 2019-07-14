@@ -25,10 +25,14 @@ img {
   position: absolute;
   bottom: 0;
   right: 8%;
-  height: auto;
-  max-width: 100%;
-  display: none;
+  height: 50;
+  width: 20%;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgb(100, 100, 100));
 }
+
+
 /*============
      BUTTONS 
 ============*/
@@ -175,9 +179,11 @@ nav a:focus {
      ABOUT 
 ============*/
 .about-hero {
+  padding-top: 10%;
   height: 100vh;
   background-color: #000;
 }
+
 .about .spanStyle {
   display: block;
   align-items: center;
@@ -200,6 +206,7 @@ p .spanStyle {
      feeds 
 ============*/
 .feed-hero {
+  padding-top: 10%;
   height: 100vh;
   background-color: #5a5560;
 }
