@@ -1,227 +1,274 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Ubuntu&display=swap");
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: "Lato";
-  text-align: center;
-  color: #faed26;
+    margin: 0;
+    font-family: "Lato";
+    text-align: center;
+    color: #faed26;
 }
 
 img {
-  height: auto;
-  max-width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .container {
-  width: 95%;
-  height: auto;
+    width: 95%;
+    height: auto;
 }
 
 .awake {
-  position: absolute;
-  bottom: 0;
-  right: 8%;
-  height: 50;
-  width: 20%;
-  display: block;
-  object-fit: contain;
-  filter: drop-shadow(0 0 15px rgb(100, 100, 100));
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    height: 50;
+    width: 20%;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 -1em 13px rgb(100, 100, 100));
 }
 
 
-/*============
+/*===============
      BUTTONS 
-============*/
+================*/
 
 .button {
-  display: inline-block;
-  font-size: 1.1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-width: 2px;
-  border-style: solid;
-  padding: 0.5em 1.75em;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: .11em;
+    border-style: solid;
+    padding: 0.6em 1.75em;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button-accent {
-  color: #faed26;
-  border-color: #faed26;
+    color: #faed26;
+    border-color: #faed26;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-  background: #faed26;
-  color: #5a5560;
+    background: #faed26;
+    color: #5a5560;
 }
 
 @media (max-width: 60rem) {
-  .button {
-    font-size: 1rem;
-  }
+    .button {
+        font-size: 1rem;
+    }
 }
+
 
 /*==============
      TYPOGRAPHY 
 ===============*/
 
 .title {
-  font-size: 5.5rem;
-  margin-bottom: 0.5em;
-  margin-top: 0em;
-  font-weight: 900;
+    font-size: 5.5rem;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    font-weight: 900;
 }
 
 .spanStyle {
-  font-size: 1.2rem;
-  font-weight: 300;
-  display: block;
-  font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: block;
+    font-style: italic;
 }
 
 .title-cta {
-  margin: 0 0 0.5em;
+    margin: 0 0 0.5em;
 }
 
 nav {
-  font-family: "Ubuntu";
+    font-family: "Ubuntu";
 }
 
 .about {
-  font-size: 3.5rem;
-  margin-bottom: 0.5em;
-  margin-top: 0em;
-  font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+    font-weight: 900;
+}
+
+.about .spanStyle {
+    color: #ddd;
 }
 
 .about-cta {
-  margin: 0 0 0.5em;
+    margin: 0 0 0.5em;
 }
 
 .feed {
-  font-size: 3.5rem;
-  margin-bottom: 0.5em;
-  margin-top: 0em;
-  font-weight: 900;
+    font-size: 3.5rem;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+    font-weight: 900;
 }
+
 
 /* Parallax
 =================== */
 
 .parallax--bg,
 .parallax--box {
-  transition: initial;
+    transition: initial;
 }
+
 
 /*============
      HEADER 
 ============*/
 
 header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 1em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav li {
-  display: inline-block;
-  margin: 1em;
+    display: inline-block;
+    margin: 1em;
 }
 
 nav a {
-  font-weight: 900;
-  text-decoration: none;
-  padding: 0.5em;
-  text-transform: uppercase;
-  color: white;
-  font-size: 0.8rem;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.8rem;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #ddd;
+    color: #ddd;
 }
 
 @media (min-width: 60rem) {
-  nav {
-    float: right;
-  }
+    nav {
+        float: right;
+    }
 }
+
 
 /*==============
      Home Hero 
 ===============*/
+
 .home-hero {
-  height: 100vh;
-  background-image: linear-gradient(-90deg, #5a5560, #46344e);
-  padding: 10em 0;
+    height: 100vh;
+    background-image: linear-gradient(-90deg, #5a5560, #46344e);
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    padding: 10em 0;
+    opacity: 10%;
+}
+
+.home-hero .container {
+    background-size: cover;
+    background-image: linear-gradient(-90deg, #5a5560, #46344e);
 }
 
 @media (min-width: 60rem) {
-  .home-hero {
-    height: 100vh;
-    padding-top: 40vh;
-  }
+    .home-hero {
+        height: 100vh;
+        padding-top: 40vh;
+    }
 }
+
 
 /*============
      ABOUT 
 ============*/
+
 .about-hero {
-  padding-top: 10%;
-  height: 100vh;
-  background-color: #000;
+    padding-top: 10%;
+    height: 100vh;
+    background-color: #232323;
+    outline: 2px solid #faed26;
+    outline-offset: -2.5em;
+}
+
+.about-hero .container {
+    margin-top: 0;
+}
+
+.about {
+    margin-top: .5em;
+    align-items: center;
+    justify-content: center;
 }
 
 .about .spanStyle {
-  display: block;
-  align-items: center;
-  justify-content: center;
-  padding: 5%;
+    display: block;
+    padding: 2%;
+    margin: 2em 1em 1em 2em;
 }
 
 p .spanStyle {
-  align-items: right;
+    align-items: right;
 }
 
 @media (min-width: 60rem) {
-  .about-hero {
-    height: 100vh;
-    padding-top: 40vh;
-  }
+    .about-hero {
+        height: 100vh;
+        padding-top: 40vh;
+    }
 }
+
 
 /*============
      feeds 
 ============*/
+
 .feed-hero {
-  padding-top: 10%;
-  height: 100vh;
-  background-color: #5a5560;
+    padding-top: 10%;
+    height: 100vh;
+    background-color: #232323;
+    outline: 2px solid #faed26;
+    outline-offset: -2.5em;
+}
+
+.feed-hero .container {
+    margin-top: 0;
+}
+
+.feed {
+    margin-top: .5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed .spanStyle {
+    display: block;
+    padding: 2%;
+    margin: 2em 1em 1em 2em;
+}
+
+p .spanStyle {
+    align-items: right;
 }
 
 @media (min-width: 60rem) {
-  .feed-hero {
-    height: 100vh;
-    padding-top: 40vh;
-  }
-}
-
-/* CTA
-=================== */
-
-.cta {
-  background-color: #00ff6c;
-  padding: 5em 0;
+    .feed-hero {
+        height: 100vh;
+        padding-top: 40vh;
+    }
 }
