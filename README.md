@@ -3,9 +3,7 @@
 
 ### **Focus on your dreams;** :smiley:
 
-The website has been deployed on netlify. 
-
-[Check it over here](https://awaken.netlify.app/)
+The website has been deployed on netlify, [check it over here](https://awaken.netlify.app/).
 
 ### References
 [W3Schools.com](https://www.w3schools.com/html/html5_intro.asp)
