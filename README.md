@@ -6,3 +6,5 @@
 The website has been deployed on netlify. 
 
 Check it over here: https://awaken.netlify.app/.
+
+PS: This is my first readme.md ! It was fun learning markdown too 😉
