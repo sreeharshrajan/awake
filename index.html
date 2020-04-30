@@ -1,85 +1,135 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/img/awake.png" />
     <title>Awake | an incpetion project</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <script type="text/javascript">
-        function scrollto(div) {
-            $("html,body").animate({
-                    scrollTop: $("#" + div).offset().top
-                },
-                "slow"
-            );
-        }
+      function scrollto(div) {
+        $("html,body").animate(
+          {
+            scrollTop: $("#" + div).offset().top,
+          },
+          "slow"
+        );
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li onclick="scrollto('home');">
-                    <a href="">Home </a>
-                </li>
-                <li onclick="scrollto('about');">
-                    <a href="#about">About </a>
-                </li>
-                <li onclick="scrollto('feed');">
-                    <a href="#feed">Feeds </a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li onclick="scrollto('home');">
+            <a href="">Home </a>
+          </li>
+          <li onclick="scrollto('about');">
+            <a href="#about">About </a>
+          </li>
+          <li onclick="scrollto('feed');">
+            <a href="#feed">Feeds </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="home-hero parallax--box" id="home">
-        <div class="container">
-            <div class="title parallax--box">
-                AWAKE
-                <span class="spanStyle">
-                    (adj.) <strong>regain conciousness.</strong>
-                </span>
-                <br />
-            </div>
-            <a href="#feed" class="button button-accent"> Explore Feeds</a>
+      <div class="container">
+        <div class="title parallax--box">
+          <span class="glow">AWAKE</span> 
+          <span class="spanStyle">
+            (adj.) <strong>regain conciousness.</strong>
+          </span>
+          <br />
         </div>
-
-        <img class="awake" src="images/awake.png" alt="Picture of Awake" />
+        <a href="#feed" class="button button-accent"> Explore Feeds</a>
+      </div>
+      <a
+        style="
+          background-color: black;
+          color: white;
+          text-decoration: none;
+          padding: 4px 6px;
+          font-family: -apple-system, BlinkMacSystemFont, 'San Francisco',
+            'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial,
+            sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 1.2;
+          display: inline-block;
+          border-radius: 3px;
+        "
+        href="https://unsplash.com/@joshhild?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        title="Download free do whatever you want high-resolution photos from Josh Hild" class="credit"
+      >
+        <span style="display: inline-block; padding: 2px 3px;"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="
+              height: 12px;
+              width: auto;
+              position: relative;
+              vertical-align: middle;
+              top: -2px;
+              fill: white;
+            "
+            viewBox="0 0 32 32"
+          >
+            <title>unsplash-logo</title>
+            <path
+              d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"
+            ></path></svg></span
+        ><span style="display: inline-block; padding: 2px 3px;"
+          >Josh Hild</span
+        ></a
+      >
     </section>
 
-    <section class="about-hero " id="about">
-        <div class="container">
-            <div class="about parallax--box parallax">
-                ABOUT
-                <span class="spanStyle">
-                    Sometimes, you just need to stay awake and soberity can be quite
-                    confusing, <br />
-                    but, believe me things can go better when you’re freaking awake.
-                    <br />‘coz this one happend to raise from now where.
-                    <p>- a complete inception project</p>
-                </span>
-            </div>
+    <section class="about-hero" id="about">
+      <div class="container">
+        <div class="about parallax--box parallax">
+          ABOUT
+          <span class="spanStyle">
+            <span class="highlight">Sometimes, you just need to stay awake and soberity can be quite
+            confusing, <br />
+            but, believe me things can go better when you’re freaking awake.
+            <br />‘coz this one happend to raise from now where. </span>
+            <p>- an inception project</p>
+          </span>
         </div>
+      </div>
     </section>
 
     <section class="feed-hero parallax--box parallax">
-        <div class="container">
-            <div class="feed parallax--box" id="feed">
-                Feeds
-            </div>
-            <ul class="icons">
-                <li><a href="http://www.twitter.com/SreeharshR/" class="icon round fa-twitter"><span
-                            class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/sreeharshrajan" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
-            </ul>
-
-
-
+      <div class="container">
+        <div class="feed parallax--box" id="feed">
+          Feeds
         </div>
+        <ul class="icons">
+          <li>
+            <a
+              href="http://www.twitter.com/SreeharshR/"
+              class="icon round fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon round fa-facebook"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/sreeharshrajan"
+              class="icon round fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>

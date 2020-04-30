@@ -11,10 +11,15 @@ body {
     font-family: "Lato";
     text-align : center;
     color      : #faed26;
+    background-image   : url('/images/home_bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat  : no-repeat, repeat;
+    background-size    : cover;
 }
 
 .container {
-    width : 95%;
+    width : 100%;
     height: auto;
 }
 
@@ -66,6 +71,14 @@ body {
     }
 }
 
+
+.credit{
+    margin:0;
+    position:fixed;
+    bottom:0;
+    right:0;
+}
+
 /*==============
      TYPOGRAPHY 
 ===============*/
@@ -76,6 +89,23 @@ body {
     margin-top   : 0em;
     font-weight  : 900;
 }
+
+.glow {
+    font-size: 80px;
+    text-align: center;
+    -webkit-animation: glow 5s ease-in infinite alternate;
+    -moz-animation: glow 5s ease-in infinite alternate;
+    animation: glow 5s ease-in infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #E0FFFF, 0 0 10px #E0FFFF,;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 10px #E0FFFF, 0 0 10px #E0FFFF;
+    }
+  }
 
 .spanStyle {
     font-size  : 1.2rem;
@@ -99,6 +129,10 @@ nav {
     font-weight  : 900;
 }
 
+.highlight{
+    background-color: #000
+}
+
 .about .spanStyle {
     color: #ddd;
 }
@@ -113,6 +147,7 @@ nav {
     margin-top   : 0em;
     font-weight  : 900;
 }
+
 
 /* Parallax
 =================== */
@@ -172,19 +207,13 @@ nav a:focus {
 
 .home-hero {
     height             : 100vh;
-    background-image   : linear-gradient(-90deg, #3c3f58, #3c3f58);
-    background-position: center;
-    background-repeat  : no-repeat, repeat;
-    background-size    : cover;
     padding            : 10em 0;
-    outline            : 2px solid #faed26;
-    outline-offset     : -2.5em;
 }
 
 .home-hero .container {
     background-size : cover;
-    background-image: linear-gradient(-90deg, #3c3f58, #3c3f58);
 }
+
 
 @media (min-width: 60rem) {
     .home-hero {
@@ -200,9 +229,6 @@ nav a:focus {
 .about-hero {
     padding-top     : 10%;
     height          : 100vh;
-    background-color: #2e3047;
-    outline         : 2px solid #faed26;
-    outline-offset  : -2.5em;
 }
 
 .about-hero .container {
@@ -238,11 +264,7 @@ p .spanStyle {
 
 .feed-hero {
     padding-top     : 10%;
-    height          : 100vh;
-    background-color: #2e3047;
-    outline         : 2px solid #faed26;
-    outline-offset  : -2.5em;
-}
+    height          : 100vh;}
 
 .feed-hero .container {
     margin-top: 0;
