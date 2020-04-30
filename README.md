@@ -1,6 +1,7 @@
 # Awake
+## Focus on your dreams;
 
-A basic responsive website to restore the HTML5 ad CSS3 knowledge. 
+> *A simple bootstrap responsive website to brush up my HTML5 ad CSS3 knowledge. *
 
-The website has been beployed on netlify.
-Check it over here, https://vigilant-liskov-6bbc50.netlify.com/.
+The website has been deployed on netlify.
+Check it over here: https://vigilant-liskov-6bbc50.netlify.com/.
