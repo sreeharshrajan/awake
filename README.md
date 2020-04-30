@@ -9,5 +9,6 @@ The website has been deployed on netlify, [check it over here](https://awaken.ne
 [W3Schools.com](https://www.w3schools.com/html/html5_intro.asp)
  | [DevDocs](https://devdocs.io/css/)
  | [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+ | [Mastering Markdown](https://guides.github.com/features/mastering-markdown/#examples)
 
 PS: This is my first readme.md ! It was fun learning markdown too 😉
