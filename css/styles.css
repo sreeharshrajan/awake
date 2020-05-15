@@ -148,6 +148,13 @@ nav {
     font-weight  : 900;
 }
 
+.link{
+    text-decoration: none;
+    color:#fff;
+    background-color: black;
+    font-weight: 400;
+}
+
 
 /* Parallax
 =================== */
@@ -354,4 +361,9 @@ ul.icons li:last-child {
 
 ul.icons li .icon:before {
     font-size: 2em;
+}
+
+.tweet-center{
+    margin-right:0;
+    left:50%;
 }
